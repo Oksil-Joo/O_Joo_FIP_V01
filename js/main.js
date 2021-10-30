@@ -2,8 +2,8 @@ import{ getData } from "./components/TheDataMiner.js";
 import TheThumbNail from "./components/TheThumbNail.js";
 
 (() => {
-    const   theTeam = document.querySelector("#team-members"),
-            theTemplate = document.querySelector("#bio-template").content;
+    const   thePortfolio = document.querySelector("#portfolio-lists"),
+            theTemplate = document.querySelector("#work-template").content;
     
             function getData() {
                 fetch("./data.json")
@@ -11,24 +11,24 @@ import TheThumbNail from "./components/TheThumbNail.js";
                 .then(data => {
                     console.table(data);
                 
-                    buildTeam(data);
+                    buildPorFt(data);
                 })
                 .catch(error => console.error(error));
             }
         
-            function buildTeam(info) {
-                let team = Object.keys(info);
+            function buildPorFt(info) {
+                let port = Object.keys(info);
          
-                team.forEach(person => {
+                port.forEach(work => {
                     let panel = theTemplate.cloneNode(true),
                          memberInfo = panel.firstElementChild.children;
          
-                         memberInfo[0].querySelector('img').src = `images/${info[person].biopic}`;
-                         memberInfo[1].textContent = info[person].name;
-                         memberInfo[2].textContent = info[person].role;
-                         memberInfo[3].textContent = info[person].nickname;
+                         memberInfo[0].querySelector('img').src = `images/${info[work].workpic}`;
+                         memberInfo[1].textContent = info[work].name;
+                         memberInfo[2].textContent = info[work].role;
+                         memberInfo[3].textContent = info[work].dec;
          
-                     theTeam.appendChild(panel);
+                     thePortfolio.appendChild(panel);
                 })
              }
 
@@ -67,5 +67,5 @@ import TheThumbNail from "./components/TheThumbNail.js";
     // }
     // theTeam.addEventListener("click", getMoreData);
     // getData(null, buildTeam);
-    getData(buildTeam);
+    getData(buildPorFt);
 })()

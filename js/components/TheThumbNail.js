@@ -2,8 +2,8 @@ export default {
     name: "TheThumbnailComponent",
 
     template: `
-    <div class="bio-panel">
-        <div class="p_avatar">
+    <div class="work-panel">
+        <div class="p_snap">
             <img src="" alt="">
         </div>
 

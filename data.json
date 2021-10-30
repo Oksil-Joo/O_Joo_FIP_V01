@@ -2,31 +2,19 @@
     "Justin": {
         "name":"Justin",
         "role":"Coordinator",
-        "nickname":"i don't know",
-        "biopic":"justin.jpg"
+        "dec": "here is description",
+        "workpic":"justin.jpg"
     },
     "John": {
         "name":"John",
         "role":"super chill prof",
-        "nickname":"just john",
-        "biopic":"john.jpg"
+        "dec": "here is description",
+        "workpic":"john.jpg"
     },
     "Joe": {
         "name":"Joe",
         "role":"Prof",
-        "nickname":"Teddy Bear",
-        "biopic":"joe.jpg"
-    },
-    "Pan": {
-        "name":"Pan",
-        "role":"Code Ninja",
-        "nickname":"Spider Pan",
-        "biopic":"pan.jpg"
-    },
-    "Trevor": {
-        "name":"Trevor",
-        "role":"Dark Arts Prof",
-        "nickname":"T-Dazzle",
-        "biopic":"trevor.jpg"
+        "dec": "here is description",
+        "workpic":"joe.jpg"
     }
   }

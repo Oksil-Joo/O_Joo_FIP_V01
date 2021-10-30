@@ -1,1 +1,75 @@
 @import"https://fonts.googleapis.com/css2?family=Lobster&display=swap";html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:"";content:none}table{border-collapse:collapse;border-spacing:0}body{color:#000;font-size:16px}
+
+html{
+    box-sizing: border-box;
+}
+
+*, *::before, *::after
+{
+    box-sizing: inherit;
+}
+
+.hidden
+{
+display: none;
+}
+.container {
+max-width: 1000px;
+margin: 0 auto;
+padding: 0;
+}
+
+.titleText {
+font-family: cochin, Times, serif;
+font-size: 80px;
+color: white;
+font-weight: bold;
+background-color: #9BB53E;
+}
+.roleText {
+font-family: cochin, Times, serif;
+font-size: 30px;
+color: white;
+font-weight: bold;
+}
+.greenCicle {
+background-color: #9BB53E;
+vertical-align: middle;
+font-weight: bold;
+padding: 120px, 50px;
+border-radius: 50%;
+color: white;
+width: 694;
+height: 694;
+
+}
+
+.greenCon {
+background-color: #9BB53E;
+}
+.btn_submit {
+color: white;
+text-align: center;
+font-size: 30px;
+font-weight: 800;
+letter-spacing: 1.5px;
+padding: 24px 150px;
+border: 2px solid #9BB53E;
+cursor: pointer;
+transition: 0.3s;
+transform: translate(-50%, -75%);
+margin: 10px 0;
+background-color: #9BB53E;
+}
+
+.roundphoto {
+  border-radius: 50%;
+}
+
+body {
+  font-family: "Times New Roman', Times, serif";
+  font-size: 18px;
+  color: black;
+  letter-spacing: 1.5px;
+
+}

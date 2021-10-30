@@ -5,10 +5,57 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/main.css" type="text/css">
-    <title>Oksil Joo's portfolio</title>
+    <title>Oksil Joo's - portfolio</title>
 </head>
 <body>
-    <main></main>
-    <script src="js/main.js" type="mocule" defer></script>
+    <h1 class="hidden">About container</h1>
+    <div>
+        <header class="container">
+            <h1 class="hidden">Logo</h1>
+            <section>
+                <a href="index.html">
+                    <img src="images/03_PortfolioLogo.svg" alt="logo" width="230px">
+                </a>
+            </section>
+            <section>
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="portfolio.html">Portfolio</a></li>
+                    </ul>
+                </nav>
+            </section>
+    <main id="app">
+        <h1>Here is my portfolio!</h1>
+
+        <h2 class="port-blurb">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quisquam dolorum repellendus velit pariatur ad labore, rem architecto inventore? Officiis tenetur molestias distinctio, provident non labore porro obcaecati nesciunt molestiae quas?
+            
+            Ipsum accusantium adipisci incidunt error, expedita porro explicabo fugit excepturi quibusdam illum qui consequuntur veritatis, veniam ducimus sit. Quam vel tempore assumenda nihil? Adipisci quis ad magnam quas exercitationem sequi!
+        </h2>
+
+        <!-- this is where our dynamic data will go -->
+        <section id="portfolio-lists">
+            <thumb v-for="item in portfolioData"></thumb>
+        </section>
+    </main>
+
+    <template id="work-template">
+        <section class="work-panel" data-key="">
+            <div class="p_snap">
+                <img src="" alt="">
+            </div>
+    
+            <h2 class="p_name">slug</h2>
+            <h3 class="p_role">slug</h3>
+            <p class="p-description">
+                slug
+            </p>
+        </section>
+    </template>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+    <script src="js/main.js" type="module" defer></script>
 </body>
 </html>
