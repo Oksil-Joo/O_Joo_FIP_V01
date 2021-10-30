@@ -8,7 +8,63 @@
     <title>Oksil Joo's - project</title>
 </head>
 <body>
-    <main></main>
-    <script src="js/main.js" type="mocule" defer></script>
+    <h1 class="hidden">About container</h1>
+    <div>
+        <header class="container">
+            <h1 class="hidden">Logo</h1>
+            <section>
+                <a href="index.html">
+                    <img src="images/03_PortfolioLogo.svg" alt="logo" width="230px">
+                </a>
+            </section>
+            <section>
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="portfolio.html">Portfolio</a></li>
+                    </ul>
+                </nav>
+            </section>
+    <main id="app">
+        <h1>Here is my LogoDesign!</h1>
+
+        <h2 class="port-blurb">
+            Logo design is a creative work that must express the meaning that the brand wants to represent. I mainly sketched through Photoshop or hand drawing and imaged using illustrations. After developing the logo, I produced a style guide using an indesign or illustration.
+        </h2>
+
+        <!-- this is where our dynamic data will go -->
+        <section id="portfolio-lists">
+            <thumb v-for="item in portfolioData"></thumb>
+        </section>
+    </main>
+
+    <template id="work-template">
+        <section class="work-panel" data-key="">
+            <div class="p_snap">
+                <img src="" alt="">
+            </div>
+    
+            <h2 class="p_name">slug</h2>
+            <h3 class="p_role">slug</h3>
+            <p class="p-description">
+                slug
+            </p>
+        </section>
+    </template>
+
+    <footer>
+        <nav>
+            <ul>
+                <li><a href="project1.html">project/o1</a></li>
+                <li><a href="project1.html">project/o2</a></li>
+                <li><a href="project1.html">project/o3</a></li>
+                <li><a href="project1.html">project/o4</a></li>
+            </ul>
+        </nav>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+    <script src="js/main.js" type="module" defer></script>
 </body>
 </html>

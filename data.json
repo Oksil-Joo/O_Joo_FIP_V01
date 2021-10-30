@@ -1,20 +1,34 @@
 {
-    "Justin": {
-        "name":"Justin",
-        "role":"Coordinator",
-        "dec": "here is description",
-        "workpic":"justin.jpg"
+    "Balla": {
+        "name":"Balla",
+        "role":"Brand Design",
+        "dec": "Balla beer is a quality with brewing expertise for 200 years, and you can enjoy a balanced taste. In particular, the subtle spices and herb notes of hop and yeast allow you to enjoy a softer, lighter, and fresher scent. With the Balla logo's first initials, the beer's freshness, carbon dioxide, and white cream bubbles were used in a circle to make the logo stand out more.",
+        "workpic":"balla.jpg"
     },
-    "John": {
-        "name":"John",
-        "role":"super chill prof",
-        "dec": "here is description",
-        "workpic":"john.jpg"
+    "Oksil Joo": {
+        "name":"Oksil Joo's",
+        "role":"Brand Design",
+        "dec": "The initials of the JOS log were derived from the first letter of the name, and the shape of the circle was emphasized using 'O'. Un particular, the colour represents personality, yello-green symbolizes nature as a lear-like colour of a plant, means harmony of self-control, and light rose pink represents a calm personality as a color of healing and relaxation.",
+        "workpic":"oksiljoo.jpg"
     },
-    "Joe": {
-        "name":"Joe",
-        "role":"Prof",
-        "dec": "here is description",
-        "workpic":"joe.jpg"
+    "Ceci": {
+        "name":"Ceci",
+        "role":"Brand Design",
+        "dec": "The CECI Cosmetics is an Egyptian soybean brand that strengthens skin immunity and improves fatigue recovery with abundant nutrition. Natural oil delivers two anti-aging effects to the skin at once, along with moisturizing and high moisture serum. The two effects make the skin moist and elastic. The initials o the CECI logo are expressed in the form of flowers using the logo to express the splendor and beauty of cosmetics.",
+        "workpic":"ceci.jpg"
+    },
+
+    "AlexanderKeith's": {
+        "name":"AlexanderKeith's",
+        "role":"Brand Design",
+        "dec": "The name of Alexander Keith's beer comes from the founder's name. Therefore, it is easier to understand the brand's name and can help you understand the word mark by showing the founder's face.",
+        "workpic":"alexander.jpg"
+    },
+    "Korean Food": {
+        "name":"Korean Food",
+        "role":"Brand Design",
+        "dec": "Bibimbap is famous among the foods representing Korean food. This menu is also served by Korean Air. This bibimbap is a food eaten with rice, vegetables, eggs, and red pepper paste sauce in an earthen pot, and yellow means eggs, red means red pepper paste, and brown means earthen pot to represent this food.",
+        "workpic":"korean.jpg"
     }
+    
   }
