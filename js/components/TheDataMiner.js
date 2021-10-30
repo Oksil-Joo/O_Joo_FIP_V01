@@ -1,5 +1,4 @@
-// a callback is a reference to another function that gets called at a certain point in your programming flow
-// params is the object we're passing in that contains an id or another bit of data. it looks like this: {id: 1} or { id:1, name:"Trevor", role: "prof" } => needs to become this: id=1&&name=Trevor
+
 function getData(params, cb) {
     // use the Fetch API to retrieve some data
     let baseURL = "./includes/index.php";
@@ -22,6 +21,6 @@ function getData(params, cb) {
         cb(data[0]);
     })
     .catch(error => console.error(error));
-}
+};
 
 export { getData }
