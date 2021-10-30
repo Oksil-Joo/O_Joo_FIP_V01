@@ -3,14 +3,16 @@ import imagemin from 'gulp-imagemin';
 import sass from 'gulp-sass';
 import dart from 'sass';
 
-const sasssify = sass(dart);
+const sassify = sass(dart);
+
 
 function compileSass(done) {
     return (
         gulp.src('sass/**/*.scss')
-        .pipe(sassify({outputStyle: "compressed"}).on('error', sassify.logError))
+            .pipe(sassify({outputStyle: "compressed"}).on('error', sassify.logError))
+            .pipe(gulp.dest('css'))
+    
     )
-    done();
 };
 
 function watch() {
@@ -20,15 +22,15 @@ function watch() {
 
 }
 
-function squashImage(done) {
+function squashImages(done) {
     gulp.src('images/**')
         .pipe(imagemin())
         .pipe(gulp.dest('images/dist'))
     done();
 }
-;
+
 export {
     watch as default,
-    squashImage as crunch,
+    squashImages as crunch,
     compileSass as compile
 };

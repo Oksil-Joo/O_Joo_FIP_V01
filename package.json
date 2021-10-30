@@ -18,6 +18,9 @@
   },
   "homepage": "https://github.com/Oksil-Joo/O_Joo_FIP_V01#readme",
   "devDependencies": {
-    "gulp": "^4.0.2"
+    "gulp": "^4.0.2",
+    "gulp-imagemin": "^8.0.0",
+    "gulp-sass": "^5.0.0",
+    "sass": "^1.43.4"
   }
 }
