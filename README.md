@@ -24,6 +24,11 @@ Moreover, the Hamburger menu expresses using java script to rotate it, and the m
 6. [gulp-sass](https://www.npmjs.com/package/gulp-sass)
 
 <br/><br/>
+### Future Plans
+Currently, I have some portfolios, so I will upload and modify constantly my work to be the perfect website.
+
+
+<br/><br/>
 ## Mit License
 
 Copyright (c) 2021 Oksil-Joo
