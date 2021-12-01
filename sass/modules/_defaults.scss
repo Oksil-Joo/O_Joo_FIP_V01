@@ -1,4 +1,102 @@
-body { 
-    color: $main-color; 
-    font-size: $main-size;
+.hidden {
+    display: none;
+}
+
+img, embed, object, video {
+    max-width: 100%;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+*,*::before, *::after {
+    box-sizing: inherit;
+}
+
+a { 
+    text-decoration: none;
+    transition: all .1s linear;
+}
+
+.container {
+	margin:0 auto;
+}
+
+.boxContainer{
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 0;
+}
+/* Nav */
+
+#topMenu {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	width: 100%;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+#burgerCon.slideToggle {
+	display: block;
+}
+
+.mainNavigation button {
+	background: url(../images/burger.svg) center no-repeat;
+	border: 0px;
+	width: 20px;
+	height: 20px;
+	padding: 0px;
+	margin: 0;
+	transition: all .1s ease;
+}
+.mainNavigation button.expanded {
+	transform: rotate(90deg);
+}
+.mainNavigation button:hover {
+	background: url(../images/burger.svg) center no-repeat;
+	border: 0px;
+	width: 20px;
+	height: 20px;
+	padding: 0px;
+	margin: 0;
+	transition: all .1s ease;
+}
+.LogoImage {
+		padding: 20px 36px 10px 36px ;
+}
+
+#burgerCon li {
+	padding: 20px 36px 10px 36px ;
+    margin: 0;
+}
+
+#burgerCon li a {
+	display: block;
+	text-align: right;
+	font-size: 30px;
+	color: #2D2926;
+	font-weight: bold;
+
+}
+
+#burgerCon li a:hover {
+	display: block;
+	text-align: right;
+	font-size: 30px;
+	color: #fff;
+	font-weight: bold;
+    background-color: #E96A97;
+}
+#burgerCon {
+	padding-top: 10px;
+	padding-bottom: 10px;
+	display: none;
+}
+
+//logo
+.LogoImage {
+    padding: 0px 36px;
+    margin-bottom: 10px;
 }

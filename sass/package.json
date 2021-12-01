@@ -1,28 +1,21 @@
 {
-  "name": "Oksiljooart",
+  "name": "Joo_O_miniApp",
   "version": "1.0.0",
-  "description": "my portfolio site",
+  "description": "Create a car web page based on class builds using SASS, Vue, AJAX, databases, and Fetch.",
+  "main": "index.js",
   "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Oksil-Joo/O_Joo_FIP_V01.git"
-  },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/Oksil-Joo/O_Joo_FIP_V01/issues"
-  },
-  "homepage": "https://github.com/Oksil-Joo/O_Joo_FIP_V01#readme",
   "devDependencies": {
     "gulp": "^4.0.2",
     "gulp-cli": "^2.3.0",
     "gulp-dart-sass": "^1.0.2",
     "gulp-imagemin": "^8.0.0",
     "gulp-sass": "^5.0.0",
-    "sass": "^1.44.0"
+    "sass": "^1.43.4"
   }
 }

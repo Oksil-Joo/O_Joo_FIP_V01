@@ -1,13 +1,20 @@
 export default {
     name: "TheThumbnailComponent",
+    
+    props: ["piece"],
 
     template: `
-    <div class="work-panel">
-        <div class="p_snap">
-            <img src="" alt="">
-        </div>
+    <div class="carPanel">
+        <div>
+            <img :src='"images/" + piece.carpic' :alt="piece.name">
+            <p><button @click="showmydata"> Go to {{piece.name}} </button></p>
+        </div>  
 
-        <h2 class="p_name">slug</h2>
     </div>
-    `
+     `,
+     methods: {
+         showmydata() {
+             this.$emit("showdata", this.piece);
+         }
+     }
 }
