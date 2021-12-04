@@ -1,6 +1,6 @@
 
 function getData(params, cb) {
-
+    
     let baseURL = "./includes/index.php";
 
     if (params) {
@@ -14,10 +14,10 @@ function getData(params, cb) {
     fetch(baseURL)
     .then(res => res.json()) 
     .then(data => {
-
+        
         cb(data[0]);
     })
-    .catch(error => console.error(error));
-};
+    .catch(error => console.error(error)); 
+}
 
 export { getData }

@@ -1,22 +1,15 @@
 {
-  "name": "Oksiljooart",
+  "name": "level3_final",
   "version": "1.0.0",
-  "description": "my portfolio site",
+  "description": "",
+  "main": "index.js",
   "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Oksil-Joo/O_Joo_FIP_V01.git"
-  },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/Oksil-Joo/O_Joo_FIP_V01/issues"
-  },
-  "homepage": "https://github.com/Oksil-Joo/O_Joo_FIP_V01#readme",
   "devDependencies": {
     "gulp": "^4.0.2",
     "gulp-cli": "^2.3.0",

@@ -4,61 +4,79 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/main.css" type="text/css">
     <title>Oksil Joo's - Home</title>
+    <link rel="stylesheet" href="css/main.css" type="text/css">
 </head>
+<body>
     <!-- Logo and menu -->
-
-    <h1 class="hidden">logo and menu</h1>
+    <h1 class="hidden">logo and Menu</h1>
     <div class="container">
-        <header class="boxContainer">
+      <header class="boxContainer">
   
-            <h1 class="hidden">Main Navigation</h1>
-            <section class="mainNavigation">
-                <div id="topMenu">
-                    <a href="Index.html">
-                        <img src="images/Allow.svg" alt="back"></a>
-                    <h2>HOME</h2>
-                    <button id="button"></button>
-                </div>
-                <div id="burgerCon">
-                    <ul id="bugerMenu">
-                        <li><a href="Index.html">HOME</a></li>
-                        <li><a href="About.html">ABOUT</a></li>
-                        <li><a href="Portfolio.html">PORTFOLIO</a></li>
-                        <li><a href="Contact.html">CONTACT</a></li>
-                    </ul>
-                </div>
-            </section>
-            
-            <h1 class="hidden">Logo Image</h1>
-            <section class="LogoImage">
-                <div class="logo">
-                    <img src="images/newlogo.svg" alt="logo">
-                </div>
-            </section>
+        <h1 class="hidden">Main Navigation</h1>
+        <section class="mainNavigation">
+          <div id="topMenu">
+            <a href="Index.html">
+            <img src="images/Allow.svg" alt="back"></a>
+            <h2>Home</h2>
+            <button id="button"></button>
+          </div>
+          <div id="burgerCon">
+            <ul id="bugerMenu">
+              <li><a href="index.html">HOME</a></li>
+              <li><a href="about.html">ABOUT</a></li>
+              <li><a href="portfolio.html">PORTFOLIO</a></li>
+              <li><a href="contact.html">CONTACT</a></li>
+            </ul>
+          </div>
+        </section>
+  
+        <h1 class="hidden">Logo Image</h1>
+        <section class="LogoImage">
+          <div class="logo">
+            <img src="images/newlogo.svg" width="101px;" alt="logo">
+          </div>
+        </section>
         </header>
+      </div>
+  
+   <!-- main Image -->        
+<main>
+  <div id="homeCon">
+    <h1 class="hidden">main Image</h1>
+    <section class="greenCon">
+      <div class="greenCil">
+        <p class="mainTitle">Hello, My name is Oksil Joo</p>
+        <p class="role">UI/UX Designer</p>
+      </div>
+    </section>
+  <!-- video -->
+    <h1 class="hidden">main video</h1>
+    <section class="mainVideoCon">
+      <div class="videoOuter">
+        <video width="100%" height="auto" controls>
+          <source src="video/video2.mp4">
+        </video>
+      </div>
+    </section>
+
+    <section class="goto">
+      <a href="portfolio.html"></a>
+        <img src="images/goto.svg" alt="go to Portfolio">
+      </a>
+    </section>
+  </div>
+</main>
+<!-- footer -->
+  <footer id="footerOutbox">
+    <section id="footerCon">
+      <div>
+        <p id="author">2021 Oksil Joo</p>
     </div>
+    </section>
+  </footer>
 
-    <main>
-        <h1 class="hidden">Main Title</h1>
-        <section></section>
-        <section class="greenCicle">
-            <h1>HELLO, I'm Oksil Joo</h1>
-            <p class="roletext">UX/UI Designer</p>
-        </section>
-        <section>
-            <img src="images/Portfolio_bt.png" alt="go to Portfolio">
-        </section>
-    </main>
-    <footer>
-        <h1 class="hidden">footer Navigation</h1>
-        <section>
-
-        </section>
-    </footer>
-</div>
-    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
-    <script src="js/main.js" type="module" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+  <script src="js/main.js" type="module"></script>
 </body>
 </html>

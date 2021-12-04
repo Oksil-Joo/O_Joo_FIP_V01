@@ -1,12 +1,13 @@
+
 export default {
     name: "TheThumbnailComponent",
-    
+
     props: ["piece"],
 
     template: `
-    <div class="carPanel">
+    <div class="workTemplate">
         <div>
-            <img :src='"images/" + piece.carpic' :alt="piece.name">
+            <img :src='"images/" + piece.work' :alt="piece.name">
             <p><button @click="showmydata"> Go to {{piece.name}} </button></p>
         </div>  
 

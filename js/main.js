@@ -1,53 +1,45 @@
-import { getData } from "./components/TheDataMiner.js";
-import TheThumbnailComponent from "./components/TheThumbNail.js";
-import TheLightboxComponent from "./components/TheLightboxComponent.js";
+import { SendMail } from "./components/mailer.js";
 
 (() => {
+// button function
+let button = document.querySelector("#button"); //haburger
+let burgerCon = document.querySelector("#burgerCon");
 
-    
-    let button = document.querySelector("#button");
-    let burgerCon = document.querySelector("#burgerCon");
-
-    const myVue = new Vue({
-        created: function() {
-            
-            getData(null, (data) => this.carData = data);
-        },
-
-        data: {
-            carData: [],
-            message: "hello from Vue",
-            isVisible: false,
-            currentCarItem: {}
-        },
-
-        methods: {
-            popLightBox(item) {
-                this.currentCarItem = item;
-                this.isVisible = true;
-            }
-        },
-
-        components: {
-            thumb: TheThumbnailComponent,
-            lightbox: TheLightboxComponent
-        }
-    }).$mount("#app"); 
+let mailSubmit = document.querySelector('.submit-wrapper'); //mail
     
 
-    function getMoreData(event) {
-        if (event.target.closet("template").dataset.key) {
-            let key = event.target.closest("template").dataset.key;
-
-            getData({id: key}, function(data){
-                donsole.log(data);
-            });
-            
-   
-        }
+//hamburger
+    function hamburgerMenu() {
+        burgerCon.classList.toggle("slideToggle");
+        button.classList.toggle("expanded");
     }
 
-    button.addEventListener("click", hamburgerMenu);
+// send.php start
+    function processMailFailure(result) {
 
-    getData(null, buildPorFt);
-})()
+        console.table(result); 
+        alert(result.message);
+    }
+   
+    function processMailSuccess(result) {
+
+        console.table(result); 
+        alert(result.message);
+    }
+
+    
+    function processMail(event) {
+   
+        event.preventDefault();
+        
+        SendMail(this.parentNode)
+            .then(data => processMailSuccess(data))
+            .catch(err => processMailFailure(err));
+    }
+
+    //hamburger button
+    button.addEventListener("click", hamburgerMenu);
+//send mail
+    mailSubmit.addEventListener("click", processMail); 
+
+})();
