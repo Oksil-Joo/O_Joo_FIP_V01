@@ -1,0 +1,48 @@
+
+@media screen and (min-width:600px)
+{
+	.boxContainer{
+		display: grid;
+		grid-template-columns: repeat(6, minmax(0, 1fr));
+		grid-column-gap: 16px;
+		margin-bottom: 20px;
+	}
+	.LogoImage {
+		order: -1;
+		grid-column: 1/2;
+		margin-top: 20px;
+	}
+	.mainNavigation {
+		grid-column: 2/-1;
+		margin-top: 60px;
+		margin-left: 90px;
+	}
+	#topMenu img {
+		display: none;
+	}
+	#topMenu h2 {
+	   display: none;
+   }
+   #topMenu {
+	   margin: 0px;
+	   padding: 0;
+   }
+	.greenCil {
+		width: 885px;
+		height: 645px;
+		margin-top: 20px;
+	}
+	.mainTitle {
+	top: 190px;
+	left: 315px;
+	width: 280px;
+	padding: 10px ;
+	font-size: 50px;
+
+	}
+
+	.role {
+		font-size: 26px;
+		padding-top: 195px;
+	}
+}
