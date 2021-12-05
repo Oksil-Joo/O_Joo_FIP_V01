@@ -21,26 +21,18 @@ import TheLightboxComponent from "./components/TheLightboxComponent.js";
             popLightBox(item) {
                 this.currentNewItem = item;
                 this.isVisible = true;
+            },
+
+            closeLightBox() {
+                this.isVisible = false;
             }
         },
+    
+    components: {
+        thumb: TheThumbnailComponent,
+        lightbox: TheLightboxComponent
+    }
 
-        components: {
-            thumb: TheThumbnailComponent,
-            lightbox: TheLightboxComponent
-        }
     }).$mount("#app"); 
     
-
-    function getMoreData(event) {
-        if (event.target.closet("template").dataset.key) {
-            let key = event.target.closest("template").dataset.key;
-
-            getData({id: key}, function(data){
-                donsole.log(data);
-            });
-            
-   
-        }
-    }
-    getData(null, buildPorFt);
 })()

@@ -1,3 +1,22 @@
+@media screen and (min-width:400px){
+	.greenCil {
+		width: 580px;
+		height: 423px;
+		margin-top: 20px;
+	}
+	.mainTitle {
+	top: 110px;
+	left: 190px;
+	width: 200px;
+	padding: 10px ;
+	font-size: 40px;
+
+	}
+	.role {
+		font-size: 20px;
+		padding-top: 115px;
+	}
+}
 
 @media screen and (min-width:600px)
 {
@@ -28,21 +47,20 @@
 	   padding: 0;
    }
 	.greenCil {
-		width: 885px;
-		height: 645px;
-		margin-top: 20px;
+		width: 990px;
+		height: 722px;
+		margin-top: 40px;
 	}
 	.mainTitle {
-	top: 190px;
-	left: 315px;
-	width: 280px;
+	top: 225px;
+	left: 350px;
+	width: 300px;
 	padding: 10px ;
-	font-size: 50px;
-
+	font-size: 60px;
 	}
 
 	.role {
-		font-size: 26px;
-		padding-top: 195px;
+		font-size: 30px;
+		padding-top: 230px;
 	}
 }

@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Oksil Joo's - Portfolio</title>
     <link rel="stylesheet" href="css/main.css" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
     <!-- Logo and menu -->
@@ -43,8 +44,8 @@
     <main id="app">
       <h1 class="hidden">gallery</h1>
       <div id="portBicCon">
-      <h2>I am a UI/UX designer.</h2>
-      <p>I wanted to learn more about reactive web design, so I enrolled in the interactive multi-media design at Fanshawe. In addition to learning html5 and CSS, and other skills such as Cinema 4d, Premiere, After Effects, etc. Although it was not easy to study, I am satisfied that I can learn many skills systematically. Therefore, I am sure that I am the passionate and talented designer your company is looking for.</p>
+      <h2 class="portTitle">I'm an UI/UX designer.</h2>
+      <p class="portContents">I wanted to learn more about reactive web design, so I enrolled in the interactive multi-media design at Fanshawe. In addition to learning html5 and CSS, and other skills such as Cinema 4d, Premiere, After Effects, etc. Although it was not easy to study, I am satisfied that I can learn many skills systematically. Therefore, I am sure that I am the passionate and talented designer your company is looking for.</p>
   
       <section class="workpanel">
         <thumb
@@ -54,10 +55,13 @@
           :key="item.id">
         </thumb>
       </section>
-  
-      <section>
-        <lightbox class="lightbox" :class='{visible: isVisible}' :piece="currentNewItem" :key="currentNewItem"></lightbox>
-      </section>
+     
+        <lightbox class="lightbox" 
+            v-on:closelb="closeLightBox"
+            :class='{ visible: isVisible }' 
+            :piece="currentNewItem" 
+            :key="currentNewItem">
+        </lightbox>
     </div>
   </main>
   

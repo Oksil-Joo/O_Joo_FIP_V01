@@ -5,13 +5,9 @@ export default {
     props: ["piece"],
 
     template: `
-    <div class="workTemplate">
-        <div>
+    <div @click="showmydata" class="workTemplate">
             <img :src='"images/" + piece.work' :alt="piece.name">
-            <p><button @click="showmydata"> Go to {{piece.name}} </button></p>
-        </div>  
-
-    </div>
+   </div>
      `,
      methods: {
          showmydata() {
