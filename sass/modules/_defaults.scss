@@ -125,7 +125,6 @@ margin: 0;
 	margin-left: auto;
 	margin-right: auto;
 	border: 3px solid #9BB53E;
-	border-radius: 10px;
 }
 
 .mainVideoCon {
@@ -188,14 +187,88 @@ margin: 0;
 #footerOutbox {
 	margin: 0 auto;
 	background-color: #9BB53E;
-	height: 50px;
+	height: 200px;
+}
 
+.footerNav {
+	margin: 0 auto;
+	padding: 0px 20px;
+	max-width: 400px;
+}
+
+.footerNav ul {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+
+}
+
+.footerNav ul li a {
+	padding: 10px;
+	color: #fff;
+	text-decoration: none;
+	font-size: 20px;
+}
+
+.footerNav ul li a:hover {
+	color:#000;
 }
 
 #author {
 	color: #fff;
 	text-align: center;
-	padding-top: 20px ;
+	padding-top: 50px ;
+}
+
+.social {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	margin-top: 20px;
+	padding: 0px;
+}
+
+.facebook_bt {
+	background: url(../images/bt_facebook.svg) center no-repeat;
+	border: 0px;
+	width: 35px;
+	height: 35px;
+	padding: 30px;
+	margin-top: 20px;
+	margin-bottom: 10px;
+	transition: all .1s ease;
+}
+
+.wordpress_bt {
+	background: url(../images/bt_word.svg) center no-repeat;
+	border: 0px;
+	width: 35px;
+	height: 35px;
+	padding: 30px;
+	margin-top: 20px;
+	margin-bottom: 10px;
+	transition: all .1s ease;
+}
+.github_bt {
+	background: url(../images/bt_github.svg) center no-repeat;
+	border: 0px;
+	width: 35px;
+	height: 35px;
+	padding: 30px;
+	margin-top: 20px;
+	margin-bottom: 10px;
+	transition: all .1s ease;
+}
+
+.facebook_bt:hover {
+	background: url(../images/bt_facebook_over.svg) center no-repeat;
+}
+
+.wordpress_bt:hover {
+	background: url(../images/bt_word_over.svg) center no-repeat;
+}
+.github_bt:hover {
+	background: url(../images/bt_github_over.svg) center no-repeat;
 }
 
 

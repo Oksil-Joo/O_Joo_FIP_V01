@@ -15,10 +15,11 @@
     font-weight: bold;
     padding-top: 20px;
     margin-bottom: 20px;
+    font-family: "cochin";
 }
 
 .subTitle {
-    font-size: 24px;
+    font-size: 20px;
     font-weight: bold;
     margin-bottom: 30px;
 }
@@ -29,7 +30,6 @@
 }
 
 .lightboxWrapper {
-    color: #000;
     max-width: 980px;
     padding: 20px;
     background-color: white;
@@ -42,4 +42,18 @@
     display: inline-block;
     margin-bottom: 10px;
     padding-right: 8px;
+}
+
+.btAlign {
+text-align: right;
+}
+
+.wrapCon {
+ display: inline-block;
+}
+
+.lightTitle {
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 30px;
 }
