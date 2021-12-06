@@ -1,13 +1,9 @@
 .workpanel {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-around;
+    display: inline-block;
     margin: 0 auto;
     max-width: 998px;   
     padding: 0;
     margin-top: 20px;
-
 }
 
 .title {
@@ -49,11 +45,22 @@ text-align: right;
 }
 
 .wrapCon {
- display: inline-block;
+ display: flex;
+ flex-direction: row;
+ flex-wrap: wrap;
 }
 
 .lightTitle {
     font-size: 30px;
     font-weight: bold;
     margin-bottom: 30px;
+}
+
+.wrapDes {
+    max-width: 400px;
+}
+
+.dataImg {
+    margin-right: 20px;
+    padding: 0px;
 }
